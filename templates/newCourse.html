@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	<div class="row divider">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner menu">
+		<div class="col-md-11 col-md-offset-1 padding-none">
+			<h1>New Course</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-1 padding-top">   
+			<form action="#" method = "post">
+				<div class="form-group">
+				<h3><label for="name"><font color="#FF4500">Course Name:</font></label></h3>
+				<input type ="text" class="form-control" maxlength="100" name="name" id="name" placeholder="Enter name of the Course" value="" required="required" data-error="Please enter Coffeeshop name.">
+				<div class="padding-bottom"></div>
+				<center><button type="submit" class="btn btn-round-sm btn-sm" id="submit" type="submit">
+				<h4><span class="glyphicon glyphicon-book" aria-hidden="true"></span><font color="#FF4500">Create</font></button></center></h4>
+				</div>
+			</form>   
+		</div>
+	</div>
+{% endblock %}
+ 

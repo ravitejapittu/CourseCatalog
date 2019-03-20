@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+<div class="row divider">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner menu">
+		<div class="col-md-11 col-md-offset-1 padding-none">
+		<h2> Are you sure you want to delete : </h2><h2><font color="white">{{item.name}}? </font></h2>
+		</div>
+	</div>
+<br>
+<br>
+
+
+
+<form action="#" method = 'post'>
+
+	<center><button type="submit" class="btn btn-default delete" id="submit" type="submit">
+	<span class="glyphicon glyphicon-trash" aria-hidden="true"></span><font color="#FF4500">Delete</font></button>
+	<button class="btn btn-default delete">
+	<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <font color="#FF4500">Cancel</font></button></center>
+</form>
+<a href = '{{url_for('showCourses')}}'>
+	
+</a>
+{% endblock %}

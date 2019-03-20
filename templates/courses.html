@@ -1,0 +1,52 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	<div class="row top-menu">
+		<div class="col-md-10"></div>
+		<div class="col-md-2 text-right">
+					</div>
+	</div>
+	<div class="row divider">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="banner main">
+		
+	</div>
+
+<div class = 'flash'>
+		      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+          
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>   
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+
+</div>
+	
+	<div class="row padding-top padding-bottom">
+		<div class="col-md-1"></div>
+		<div class="col-md-10 padding-none">
+			<a href="{{url_for('newCourse')}}">
+				<button type="button" class="btn btn-danger btn-round-lg btn-lg" id="new-course">
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span>Add Course
+				</button>
+			</a>
+		</div>    
+		<div class="col-md-1"></div>
+	</div>   
+	{% for course in courses %}
+		<a href = "{{url_for('showMenu', course_id = course.id)}}">
+			<div class="row">
+				<div class="col-md-1"></div>
+					<div class="col-md-10 course-list">
+						<h3>{{course.name}}</h3>
+					</div>
+				<div class="col-md-1"></div>
+			</div>
+		</a>
+	{% endfor %}
+{% endblock %}

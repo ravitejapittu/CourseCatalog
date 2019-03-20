@@ -1,0 +1,43 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+	<div class="row divider">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner menu">
+		<div class="col-md-11 col-md-offset-1 padding-none">
+			<h1>New Course Item in Menu</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-1 padding-top">
+			<form action="#" method = "post">  
+				<div class="form-group">
+					<label for="name"><font color="#FF4500">Name:</font></label>
+					<input type ="text" maxlength="50" class="form-control" name="name" id="name"placeholder=" Enter Name of the course" value="" required="required" data-error="Please enter course name.">
+
+					<label for="description"><font color="#FF4500">Description:</font></label>
+					<textarea class="form-control" maxlength="250" rows="3" name="description" id="description" placeholder="Enter description of the course" value="" required="required" data-error="Please enter description of the course"></textarea>
+
+					<label for="price"><font color="#FF4500">Price:</font></label>
+					<div class="input-group">
+						<div class="input-group-addon">&#x20b9;</div>
+						<input type ="text" class="form-control" maxlength="10" name="price" id="price" placeholder="Price in &#x20b9;" value="" required="required" data-error="Please enter price of the course">
+					</div>
+					<div class="form-group">
+                <label for="picture"><font color="#FF4500">Picture URL:</font></label>
+                <input type ="URL" class="form-control" id="picture" maxlength="250" name="picture" placeholder="http://www.example.com" value="" required="required" data-error="Please give url for course">
+                
+            </div>
+					<button type="submit" class="btn btn-success" id="submit" type="submit">
+					<span class="glyphicon glyphicon-book" aria-hidden="true"></span>Create</font></button>
+					   
+				</div>
+			</form>       
+			
+		</div>
+	</div>
+{% endblock %}   
+
+ 
