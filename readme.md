@@ -39,9 +39,9 @@ Seperate instructions are provided to get GConnect working also.
 Or you can simply Install the dependency libraries (Flask, sqlalchemy, requests,psycopg2 and oauth2client) by running 
 `pip install -r requirements.txt`
 
-7. Setup application database `python /Item-Catalog/database_setup.py`
-8. *Insert sample data `python /Item-Catalog/lotsofmenus.py`
-9. Run application using `python /Item-Catalog/project.py`
+7. Setup application database `python /CourseCatalog/database_setup.py`
+8. *Insert sample data `python /CourseCatalog/lotsofmenus.py`
+9. Run application using `python /CourseCatalog/project.py`
 10. Access the application locally using http://localhost:5000
 
 *Optional step(s)
@@ -59,8 +59,8 @@ To get the Google login working there are a few additional steps:
 10. Copy the Client ID and paste it into the `data-clientid` in login.html
 11. On the Dev Console Select Download JSON
 12. Rename JSON file to Gclient_secret.json
-13. Place JSON file in Item-Catalog directory that you cloned from here
-14. Run application using `python /Item-Catalog/project.py`
+13. Place JSON file in CourseCatalog directory that you cloned from here
+14. Run application using `python /CourseCatalog/project.py`
 
 ## JSON Endpoints
 The following are open to the public:
